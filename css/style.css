@@ -1,5 +1,5 @@
 html { overflow: hidden; }
-body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
+body { font-family: 'Calibri', sans-serif; line-height: 1; font-size: 48px; }
 
 .title {
     text-transform: lowercase;
@@ -25,7 +25,7 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
 
 .step {
     text-align: left;
-    width: 800px;
+    width: 1000px;
     padding: 20px;
 
     -webkit-box-sizing: border-box;
@@ -48,23 +48,22 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
 
     text-shadow: rgba(0,0,0,.01) 0 0 1px; /* Chrome @font-face anti-aliasing fix */
 
-    font-family: 'Calibri', sans-serif, sans-serif;
     font-size: 48px;
     line-height: 48px;
     letter-spacing: 1px;
 }
 
 .step.wide {
-    width: 1000px;
+    width: 1200px;
 }
 
 .step.narrow {
-    width: 600px;
+    width: 800px;
 }
 
 .step.future:not(.always):not(.overwriting) { opacity: 0.0; }
 .step.future.overwriting { opacity: 0.0; }
-.step.past:not(.always):not(.overwritten):not(.overwriting) { opacity: 0.25; }
+.step.past:not(.always):not(.overwritten):not(.overwriting) { opacity: 0.2; }
 .step.past.overwritten { opacity: 0.0; }
 .step.past.overwriting { opacity: 1.0 }
 .step.always { opacity: 1.0 }
@@ -87,7 +86,6 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
 
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Calibri', sans-serif, sans-serif;
     font-size: 48px;
     line-height: 48px;
     letter-spacing: 1px;
@@ -108,7 +106,6 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Calibri', sans-serif, sans-serif;
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -1px;
@@ -124,7 +121,6 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Calibri', sans-serif, sans-serif;
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -1px;
@@ -242,15 +238,35 @@ ul.pain span {
     padding: 10px;
 }
 
+.bigger-margins {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.bigger-padding {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .pulled-center {
+    display: block;
     text-align: center;
 }
 
 .pulled-right {
+    display: block;
     text-align: right;
+    float: right;
+    clear: both;
+    right: 0%;
 }
 
 .pulled-left {
+    display: block;
     text-align: left;
 }
 
@@ -259,31 +275,33 @@ ul.pain span {
     font-style: italic;
 }
 
+.very-large {
+    font-size: 96px;
+    line-height: 96px;
+    letter-spacing: -1px;
+}
+
 .large {
-    font-family: 'Calibri', sans-serif, sans-serif;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -1px;
+}
+
+.medium {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -1px;
 }
 
-.medium {
-    font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 36px;
-    line-height: 36px;
-    letter-spacing: -1px;
-}
-
 .small {
-    font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 32px;
+    line-height: 32px;
     letter-spacing: -1px;
 }
 
 .very-small {
-    font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 24px;
+    line-height: 24px;
     letter-spacing: -1px;
 }
 
