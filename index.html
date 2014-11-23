@@ -18,24 +18,70 @@
 
 <body>
 
-<div id="impress">
+    <div id="impress">
 
-    <div data-rotate-x="" data-rotate-y="" data-rotate-z="" data-x="" data-y="" data-z="" class="step narrow">
-        <h1 class="title">TAP #4</h1>
-        <h4 class="subtitle">Domain Driven <span class="orange-highlight drop-shadow">Design</span></h4>
-        <h4 class="author">Sebastian Gębski<br/>11.2014</h4>
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="" data-x="" data-y="" data-z="600" class="step overwritten">
+            <h1 class="title">TAP #4</h1>
+            <h4 class="subtitle">Domain Driven <span class="orange-highlight drop-shadow">Design</span></h4>
+            <h4 class="author">Sebastian Gębski<br/>11.2014</h4>
+        </div>
+
+        <div id="cycle" data-rotate-x="" data-rotate-y="" data-rotate-z="" data-x="" data-y="" data-z="0" class="step transparent always">
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="-90" data-x="0" data-y="-300" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            What design <span class="green-highlight drop-shadow">IS</span><br/>
+            & what design <span class="orange-highlight drop-shadow">ISN'T</span><br/>
+            <span class="medium comment">(supposed to be)</span>
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="-54" data-x="170" data-y="-250" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            Ancient ART of design
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="-18" data-x="270" data-y="-100" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            What <span class="striked red-highlight">design</span> <b>DDD</b> IS<br/> & what <span class="striked red-highlight">design</span> <b>DDD</b> ISN'T
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="18" data-x="270" data-y="100" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            Models, it's all about models
+            <!-- photomodel pic here> <-->
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="54" data-x="170" data-y="250" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            DDD core concepts
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="90" data-x="0" data-y="300" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            DDD building bloxx
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="126" data-x="-170" data-y="250" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            Related topics
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="162" data-x="-270" data-y="100" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            DDD in practice
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="198" data-x="-270" data-y="-100" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            Key lessons learned
+        </div>
+
+        <div data-rotate-x="" data-rotate-y="" data-rotate-z="234" data-x="-170" data-y="-250" data-z="50" data-scale="0.5" class="step pulled-center overwriting">
+            Resources
+        </div>
+
     </div>
-    
-</div>
 
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
 
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
 
 </body>
 </html>

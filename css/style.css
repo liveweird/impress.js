@@ -3,34 +3,29 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
 
 .title {
     text-transform: lowercase;
+    font-size: 96px;
 }
 
 .subtitle {
+    text-transform: lowercase;
     text-align: left;
     color: dimgrey;
-    font-size: 24px;
+    font-size: 64px;
     margin-top: -40px;
 }
 
 .author {
     text-align: right;
-    color: darkgrey;
-    font-size: 18px;
+    color: darkslategrey;
+    font-size: 36px;
 }
 
 .background {
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
 }
 
 .step {
     text-align: left;
-    width: 1000px;
+    width: 800px;
     padding: 20px;
 
     -webkit-box-sizing: border-box;
@@ -52,6 +47,10 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
     transform: translatey(0px);
 
     text-shadow: rgba(0,0,0,.01) 0 0 1px; /* Chrome @font-face anti-aliasing fix */
+}
+
+.step.wide {
+    width: 1000px;
 }
 
 .step.narrow {
@@ -78,14 +77,14 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
     display: block;
 
     width: 1000px;
+    height: 1000px;
     padding: 40px 40px;
 
-    color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 48px;
+    line-height: 48px;
     letter-spacing: 1px;
 }
 
@@ -105,8 +104,8 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 48px;
+    line-height: 48px;
     letter-spacing: -1px;
 }
 
@@ -121,8 +120,8 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 48px;
+    line-height: 48px;
     letter-spacing: -1px;
 }
 
@@ -132,6 +131,10 @@ body { font-family: 'Calibri', sans-serif; line-height: .8; font-size: 45px; }
     -webkit-box-shadow: 5px 5px 5px #666;
     padding-left: 2px;
     padding-right: 2px;
+}
+
+.striked {
+    text-decoration: line-through;
 }
 
 .lv0-indent{
@@ -234,71 +237,48 @@ ul.pain span {
     padding: 10px;
 }
 
-.filler {
-    text-align: justify;
-    text-transform: lowercase;
-    letter-spacing: normal;
-    font-stretch: ultra-condensed;
-    font-weight: 600;
-}
-
-.centered {
+.pulled-center {
     text-align: center;
-    text-transform: lowercase;
-    letter-spacing: normal;
-    font-stretch: ultra-condensed;
-    font-weight: 600;
 }
 
-.toponeliner {
-    display: block;
-    height: 40px;
-    padding-top: 0px;
-    margin-top: 0px;
-    top: -20px;
+.pulled-right {
+    text-align: right;
 }
 
-.bottomoneliner {
-    display: block;
-    height: 40px;
-    padding-top: 0px;
-    margin-top: 0px;
-    top: 20px;
+.pulled-left {
+    text-align: left;
 }
 
-.twoliner {
-    display: block;
-    height: 80px;
-    padding-top: 0px;
-    margin-top: 0px;
-    top: 0px;
+.comment {
+    color: lightslategrey;
+    font-style: italic;
 }
 
 .large {
     font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 48px;
+    line-height: 48px;
     letter-spacing: -1px;
 }
 
 .medium {
     font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 36px;
+    line-height: 36px;
     letter-spacing: -1px;
 }
 
 .small {
     font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 24px;
     letter-spacing: -1px;
 }
 
 .very-small {
     font-family: 'Calibri', sans-serif, sans-serif;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     letter-spacing: -1px;
 }
 
@@ -320,57 +300,10 @@ ul.pain span {
     padding-right: 25%;
 }
 
-.square {
-    height: 1000px;
-}
-
-table.table-modern caption {
-    border: 4px solid transparent;
-}
-
-table.table-modern thead tr th {
-    background-color: rgba(64, 128, 255, 1);
-    margin: 0px;
-    padding: 10px;
-
-    box-shadow: 5px 5px 5px #666;
-    -moz-box-shadow: 5px 5px 5px #666;
-    -webkit-box-shadow: 5px 5px 5px #666;
-    border: 8px solid transparent;
-}
-
-table.table-modern tbody tr td {
-    background-color: rgba(220, 220, 255, 1);
-    margin: 0px;
-    padding: 10px;
-
-    box-shadow: 5px 5px 5px #666;
-    -moz-box-shadow: 5px 5px 5px #666;
-    -webkit-box-shadow: 5px 5px 5px #666;
-    border: 8px solid transparent;
-}
-
-table.table-modern tfoot tr td {
-    background-color: rgb(231, 255, 105);
-    margin: 0px;
-    padding: 10px;
-
-    box-shadow: 5px 5px 5px #666;
-    -moz-box-shadow: 5px 5px 5px #666;
-    -webkit-box-shadow: 5px 5px 5px #666;
-    border: 8px solid transparent;
-}
-
-.table-modern {
-    font-size: 24px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    text-align: left;
-
-    padding: 20px 20px;
-    border: 8px solid transparent;
-
-    background-color: #ffffff;
-    width: 100%;
+#cycle {
+    background-image: url('cycle.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 75%;
 }
