@@ -153,14 +153,10 @@ body { font-family: 'Calibri', sans-serif; line-height: 1; font-size: 48px; }
 ul {
     padding: 0px;
     margin-left: 0px;
-    font-size: 24pt;
-    line-height: 32px;
 }
 
 ul li {
-    margin-left: 60px;
-    font-size: 22px;
-    line-height: 28px;
+    margin-left: 120px;
 }
 
 ul.gain span {
@@ -327,6 +323,12 @@ ul.pain span {
     position: absolute;
     top: 15%;
     left: 15%;
+}
+
+.oob-top-left {
+    position: absolute;
+    top: -5%;
+    left: -5%;
 }
 
 .top-right {
