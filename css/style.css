@@ -425,3 +425,16 @@ ul.pain span {
     width: 525px;
     height: 362px;
 }
+
+.pic-008-identity {
+    background-image: url('008_identity.png');
+    width: 288px;
+    height: 367px;
+}
+
+.pic-009-jigsaw {
+    background-image: url('009_jigsaw.png');
+    width: 300px;
+    height: 304px;
+}
+
