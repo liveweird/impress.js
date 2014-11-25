@@ -349,10 +349,48 @@ ul.pain span {
     right: 15%;
 }
 
+.pic {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+    background-position: center;
+    display: table;
+}
+
 #cycle {
     background-image: url('cycle.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     background-size: 75%;
+}
+
+.pic-000-puzzled {
+    background-image: url('000_puzzled.png');
+    width: 200px;
+    height: 330px;
+}
+
+.pic-001-quill {
+    background-image: url('001_quill.png');
+    width: 400px;
+    height: 400px;
+}
+
+.pic-002-david {
+    background-image: url('002_david.jpg');
+    width: 400px;
+    height: 400px;
+}
+
+.pic-003-topdown {
+    background-image: url('003_topdown.png');
+    width: 300px;
+    height: 300px;
+}
+
+.pic-004-bottomup {
+    background-image: url('004_bottomup.png');
+    width: 300px;
+    height: 300px;
 }
