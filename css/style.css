@@ -355,6 +355,7 @@ ul.pain span {
     background-origin: content-box;
     background-position: center;
     display: table;
+    z-index: -1;
 }
 
 #cycle {
@@ -393,4 +394,34 @@ ul.pain span {
     background-image: url('004_bottomup.png');
     width: 300px;
     height: 300px;
+}
+
+.pic-022-model {
+    background-image: url('022_model.jpg');
+    width: 260px;
+    height: 340px;
+}
+
+.pic-005-core {
+    background-image: url('005_core.png');
+    width: 200px;
+    height: 200px;
+}
+
+.pic-023-domains {
+    background-image: url('023_domains.jpg');
+    width: 400px;
+    height: 304px;
+}
+
+.pic-006-language {
+    background-image: url('006_language.png');
+    width: 300px;
+    height: 300px;
+}
+
+.pic-007-blocks {
+    background-image: url('007_blocks.png');
+    width: 525px;
+    height: 362px;
 }
