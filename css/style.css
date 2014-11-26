@@ -516,3 +516,33 @@ ul.pain span {
     width: 500px;
     height: 144px;
 }
+
+.pic-020-mud {
+    background-image: url('020_mud.jpg');
+    width: 500px;
+    height: 342px;
+}
+
+.pic-021-spaghetti {
+    background-image: url('021_spaghetti.jpg');
+    width: 614px;
+    height: 409px;
+}
+
+.pic-031-complexity {
+    background-image: url('031_complexity.jpg');
+    width: 514px;
+    height: 401px;
+}
+
+.pic-032-wanted {
+    background-image: url('032_wanted.jpg');
+    width: 800px;
+    height: 450px;
+}
+
+.pic-030-allthethings {
+    background-image: url('030_allthethings.jpg');
+    width: 600px;
+    height: 420px;
+}
