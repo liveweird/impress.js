@@ -453,3 +453,15 @@ ul.pain span {
     width: 543px;
     height: 390px;
 }
+
+.pic-011-swiss {
+    background-image: url('011_swiss.png');
+    width: 300px;
+    height: 300px;
+}
+
+.pic-028-bridge {
+    background-image: url('028_bridge.png');
+    width: 474px;
+    height: 301px;
+}
