@@ -358,6 +358,10 @@ ul.pain span {
     z-index: -1;
 }
 
+.author {
+    vertical-align: sub;
+}
+
 #cycle {
     background-image: url('cycle.png');
     background-repeat: no-repeat;
@@ -402,6 +406,12 @@ ul.pain span {
     height: 340px;
 }
 
+.pic-027-destroyer {
+    background-image: url('027_destroyer.jpg');
+    width: 500px;
+    height: 373px;
+}
+
 .pic-005-core {
     background-image: url('005_core.png');
     width: 200px;
@@ -438,3 +448,8 @@ ul.pain span {
     height: 304px;
 }
 
+.pic-010-toolbox {
+    background-image: url('010_toolbox.png');
+    width: 543px;
+    height: 390px;
+}
