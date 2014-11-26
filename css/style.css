@@ -225,7 +225,7 @@ ul.pain span {
 .grey-block {
     font-style: italic;
     display: block;
-    background-color: lightgray;
+    background-color: lightgrey;
     width: 100%;
     margin: 0px;
     padding: 10px;
@@ -545,4 +545,16 @@ ul.pain span {
     background-image: url('030_allthethings.jpg');
     width: 600px;
     height: 420px;
+}
+
+.pic-033-highlander {
+    background-image: url('033_highlander.jpg');
+    width: 600px;
+    height: 350px;
+}
+
+.pic-014-diagram {
+    background-image: url('014_diagram.jpg');
+    width: 753px;
+    height: 425px;
 }
