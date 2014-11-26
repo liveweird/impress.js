@@ -492,3 +492,27 @@ ul.pain span {
     width: 300px;
     height: 202px;
 }
+
+.pic-024-brownfield {
+    background-image: url('024_brownfield.jpg');
+    width: 500px;
+    height: 375px;
+}
+
+.pic-017-bluebook {
+    background-image: url('017_bluebook.jpg');
+    width: 165px;
+    height: 250px;
+}
+
+.pic-018-redbook {
+    background-image: url('018_redbook.jpg');
+    width: 165px;
+    height: 250px;
+}
+
+.pic-019-pluralsight {
+    background-image: url('019_pluralsight.png');
+    width: 500px;
+    height: 144px;
+}
