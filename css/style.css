@@ -553,8 +553,32 @@ ul.pain span {
     height: 350px;
 }
 
-.pic-014-diagram {
-    background-image: url('014_diagram.jpg');
-    width: 753px;
-    height: 425px;
+.pic-014-example0 {
+    background-image: url('014_example0.png');
+    width: 517px;
+    height: 402px;
+}
+
+.pic-014-example1 {
+    background-image: url('014_example1.png');
+    width: 857px;
+    height: 412px;
+}
+
+.pic-014-example2 {
+    background-image: url('014_example2.png');
+    width: 858px;
+    height: 530px;
+}
+
+.pic-034-ui {
+    background-image: url('034_ui.jpg');
+    width: 810px;
+    height: 552px;
+}
+
+.pic-035-erd {
+    background-image: url('035_erd.png');
+    width: 535px;
+    height: 496px;
 }
