@@ -273,13 +273,7 @@ a:focus {
     transform:         translateZ(30px);
 }
 
-.step:not(.future) .grow {
-    -webkit-transform: scale(1.2);
-    -moz-transform:    scale(1.2);
-    -ms-transform:     scale(1.2);
-    -o-transform:      scale(1.2);
-    transform:         scale(1.2);
-
+.step:not(.future) .transform {
     /*display: inline-block;*/
     -webkit-transition: 0.5s;
     -moz-transition:    0.5s;
@@ -288,19 +282,60 @@ a:focus {
     transition:         0.5s;
 }
 
-.step:not(.future) .shrink {
+.step:not(.future) .transform-grow {
+    -webkit-transform: scale(1.2);
+    -moz-transform:    scale(1.2);
+    -ms-transform:     scale(1.2);
+    -o-transform:      scale(1.2);
+    transform:         scale(1.2);
+    
+    -webkit-transition-delay: 0.0s;
+    -moz-transition-delay:    0.0s;
+    -ms-transition-delay:     0.0s;
+    -o-transition-delay:      0.0s;
+    transition-delay:         0.0s;
+}
+
+.step:not(.future) .transform-shrink {
     -webkit-transform: scale(0.7);
     -moz-transform:    scale(0.7);
     -ms-transform:     scale(0.7);
     -o-transform:      scale(0.7);
     transform:         scale(0.7);
 
-    /*display: inline-block;*/
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+    -webkit-transition-delay: 0.0s;
+    -moz-transition-delay:    0.0s;
+    -ms-transition-delay:     0.0s;
+    -o-transition-delay:      0.0s;
+    transition-delay:         0.0s;
+}
+
+.step:not(.future) .transform-skew-left {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform:    rotate(-10deg);
+    -ms-transform:     rotate(-10deg);
+    -o-transform:      rotate(-10deg);
+    transform:         rotate(-10deg);
+
+    -webkit-transition-delay: 0.0s;
+    -moz-transition-delay:    0.0s;
+    -ms-transition-delay:     0.0s;
+    -o-transition-delay:      0.0s;
+    transition-delay:         0.0s;
+}
+
+.step:not(.future) .transform-skew-right {
+    -webkit-transform: rotate(10deg);
+    -moz-transform:    rotate(10deg);
+    -ms-transform:     rotate(10deg);
+    -o-transform:      rotate(10deg);
+    transform:         rotate(10deg);
+
+    -webkit-transition-delay: 0.0s;
+    -moz-transition-delay:    0.0s;
+    -ms-transition-delay:     0.0s;
+    -o-transition-delay:      0.0s;
+    transition-delay:         0.0s;
 }
 
 h1 {
