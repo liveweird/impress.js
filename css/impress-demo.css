@@ -130,7 +130,13 @@ a:focus {
     /*transition:         opacity 1s;*/
 /*}*/
 
-.impress-enabled .step.active { opacity: 1 }
+.impress-enabled .step.future.overwriting { opacity: 0.0; }
+
+/*.impress-enabled .step.active { opacity: 1.0 }*/
+/*.impress-enabled .step.past:not(.always):not(.overwritten):not(.overwriting) { opacity: 0.2; }*/
+/*.impress-enabled .step.past.overwritten { opacity: 0.0; }*/
+/*.impress-enabled .step.past.overwriting { opacity: 1.0 }*/
+/*.impress-enabled .step.always { opacity: 1.0 }*/
 
 .slide-vert {
     width: 800px;
@@ -174,13 +180,6 @@ a:focus {
 .slide-transparent {
     background-color: transparent;
 }
-
-/*.step.future:not(.always):not(.overwriting) { opacity: 0.0; }*/
-/*.step.future.overwriting { opacity: 0.0; }*/
-/*.step.past:not(.always):not(.overwritten):not(.overwriting) { opacity: 0.2; }*/
-/*.step.past.overwritten { opacity: 0.0; }*/
-/*.step.past.overwriting { opacity: 1.0 }*/
-/*.step.always { opacity: 1.0 }*/
 
 .yellow-highlight {
     background-color: rgba(255, 255, 0, .5);
@@ -375,6 +374,13 @@ h3 {
     background: url("../img/classified.png") no-repeat center;
     background-size: contain;
     background-position-y: top;
+}
+
+.case-closed {
+    width: 700px;
+    height: 400px;
+    background: url("../img/case-closed.png") no-repeat center;
+    background-size: 75%;
 }
 
 .arrow-right {
