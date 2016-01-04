@@ -134,6 +134,7 @@ a:focus {
 /*}*/
 
 .impress-enabled .step.future.overwriting { opacity: 0.0; }
+.impress-enabled .step:not(.previous):not(.present):not(.next) { opacity: 0.0 }
 
 /*.impress-enabled .step.active { opacity: 1.0 }*/
 /*.impress-enabled .step.past:not(.always):not(.overwritten):not(.overwriting) { opacity: 0.2; }*/
@@ -182,6 +183,14 @@ a:focus {
 
 .slide-transparent {
     background-color: transparent;
+}
+
+.blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
 }
 
 .yellow-highlight {
@@ -283,6 +292,22 @@ a:focus {
     transition:         0.5s;
 }
 
+.step.future .transform-sharpen {
+    -webkit-filter:    blur(10px);
+    -moz-filter:       blur(10px);
+    -o-filter:         blur(10px);
+    -ms-filter:        blur(10px);
+    filter:            blur(10px);
+}
+
+.step:not(.future) .transform-sharpen {
+    -webkit-filter:    blur(0px);
+    -moz-filter:       blur(0px);
+    -o-filter:         blur(0px);
+    -ms-filter:        blur(0px);
+    filter:            blur(0px);
+}
+
 .step:not(.future) .transform-grow {
     -webkit-transform: scale(1.2);
     -moz-transform:    scale(1.2);
@@ -326,13 +351,13 @@ h2 {
     font-size: 90px;
     line-height: 90px;
     letter-spacing: -9px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 h3 {
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -6px;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -4px;
     padding-bottom: 10px;
 }
 

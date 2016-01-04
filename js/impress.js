@@ -547,20 +547,30 @@
             
             return el;
         };
-        
+
+        var getShifted = function(step, shift) {
+            var shifted = steps.indexOf(step) + shift;
+
+            if (shifted < 0) {
+                return steps[steps.length + shifted];
+            }
+
+            if (shifted >= steps.length) {
+                return steps[shifted - steps.length];
+            }
+
+            return steps[shifted];
+        };
+
         // `prev` API function goes to previous step (in document order)
         var prev = function () {
-            var prev = steps.indexOf( activeStep ) - 1;
-            prev = prev >= 0 ? steps[ prev ] : steps[ steps.length-1 ];
-            
+            var prev = getShifted(activeStep, -1);
             return goto(prev);
         };
         
         // `next` API function goes to next step (in document order)
         var next = function () {
-            var next = steps.indexOf( activeStep ) + 1;
-            next = next < steps.length ? steps[ next ] : steps[ 0 ];
-            
+            var next = getShifted(activeStep, 1);
             return goto(next);
         };
         
@@ -578,20 +588,33 @@
         // For example the `present` class can be used to trigger some custom
         // animations when step is shown.
         root.addEventListener("impress:init", function(){
+            var cnt = 8;
+
             // STEP CLASSES
             steps.forEach(function (step) {
                 step.classList.add("future");
             });
-            
+
+            for (var i = 1; i <= cnt; i++) {
+                getShifted(steps[0], -1 * i).classList.add("previous");
+                getShifted(steps[0], i).classList.add("next");
+            }
+
             root.addEventListener("impress:stepenter", function (event) {
-                event.target.classList.remove("past");
-                event.target.classList.remove("future");
-                event.target.classList.add("present");
+                var current = event.target;
+                current.classList.remove("past");
+                current.classList.remove("future");
+                current.classList.remove("next");
+                current.classList.add("present");
+                getShifted(current, cnt).classList.add("next");
             }, false);
             
             root.addEventListener("impress:stepleave", function (event) {
-                event.target.classList.remove("present");
-                event.target.classList.add("past");
+                var current = event.target;
+                current.classList.remove("present");
+                current.classList.add("past");
+                current.classList.add("previous");
+                getShifted(current, -cnt).classList.remove("previous");
             }, false);
             
         }, false);
