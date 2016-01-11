@@ -588,7 +588,7 @@
         // For example the `present` class can be used to trigger some custom
         // animations when step is shown.
         root.addEventListener("impress:init", function(){
-            var cnt = 15;
+            var cnt = 14;
 
             // STEP CLASSES
             steps.forEach(function (step) {
