@@ -189,6 +189,10 @@ ul.pain span {
     background-color: lightgrey;
 }
 
+.violet-highlight {
+    background-color: mediumpurple;
+}
+
 .blue-block {
     font-style: italic;
     display: block;
@@ -229,6 +233,15 @@ ul.pain span {
     font-style: italic;
     display: block;
     background-color: lightgrey;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+.violet-block {
+    font-style: italic;
+    display: block;
+    background-color: mediumpurple;
     width: 100%;
     margin: 0px;
     padding: 10px;
@@ -596,4 +609,28 @@ ul.pain span {
     background-image: url('037_distilled.jpg');
     width: 165px;
     height: 250px;
+}
+
+.pic-038-eventstorming {
+    background-image: url('038_eventstorming.png');
+    width: 300px;
+    height: 390px;
+}
+
+.pic-039-ziobrando {
+    background-image: url('039_ziobrando.png');
+    width: 300px;
+    height: 390px;
+}
+
+.pic-040-lumbermen {
+    background-image: url('040_lumbermen.jpg');
+    width: 800px;
+    height: 531px;
+}
+
+.pic-041-actormodel {
+    background-image: url('041_actormodel.png');
+    width: 526px;
+    height: 470px;
 }
